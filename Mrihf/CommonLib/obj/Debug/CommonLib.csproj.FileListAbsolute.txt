@@ -1,0 +1,12 @@
+E:\Mrihf\Output\CommonLib.dll
+E:\Mrihf\Output\CommonLib.pdb
+E:\Mrihf\Mrihf\CommonLib\obj\Debug\CommonLib.csproj.CopyComplete
+E:\Mrihf\Mrihf\CommonLib\obj\Debug\CommonLib.dll
+E:\Mrihf\Mrihf\CommonLib\obj\Debug\CommonLib.pdb
+E:\Mrihf\Mrihf\CommonLib\obj\Debug\CommonLib.csprojAssemblyReference.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.csprojAssemblyReference.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\Output\CommonLib.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\Output\CommonLib.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.csproj.CopyComplete

@@ -1,0 +1,14 @@
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\bin\Debug\GanttChartControl.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\bin\Debug\GanttChartControl.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl.csprojAssemblyReference.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\bin\Debug\CommonLib.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\bin\Debug\CommonLib.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl_MarkupCompile.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl_MarkupCompile.lref
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\Themes\ProjectItemTreeControlStyle.baml
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl.g.resources
+F:\Source Code\GanttChartWPF\GanttChartWPF\GanttChartControl\obj\Debug\GanttChartControl.csproj.CopyComplete

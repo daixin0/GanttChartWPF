@@ -1,0 +1,14 @@
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.exe.config
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.exe
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csprojAssemblyReference.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\MainWindow.g.cs
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\App.g.cs
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF_MarkupCompile.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF_MarkupCompile.lref
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\MainWindow.baml
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.g.resources
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.Properties.Resources.resources
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.GenerateResource.cache
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.exe
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.pdb

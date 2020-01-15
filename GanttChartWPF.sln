@@ -7,6 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttChartWPF", "GanttChart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttChartControl", "GanttChartControl\GanttChartControl.csproj", "{A99BE03F-F19B-493C-8D19-6F7C21738D9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{CE8748A6-3368-4BCB-A823-F4B2493851F4}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\Microsoft.Practices.ServiceLocation.dll = Libs\Microsoft.Practices.ServiceLocation.dll
+		Libs\System.Windows.Interactivity.dll = Libs\System.Windows.Interactivity.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mrihf", "Mrihf", "{ABB6962B-887A-4E60-97AC-791F25D1C23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "Mrihf\CommonLib\CommonLib.csproj", "{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +31,16 @@ Global
 		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C} = {ABB6962B-887A-4E60-97AC-791F25D1C23F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32620826-0155-40B0-8FDD-C84679B39991}
