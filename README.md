@@ -1,2 +1,2 @@
 # GanttChartWPF
-Gantt Chart for WPF
+Gantt Chart for WPF  
