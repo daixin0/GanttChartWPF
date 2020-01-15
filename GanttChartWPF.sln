@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttChartWPF", "GanttChartWPF\GanttChartWPF.csproj", "{00398FBD-92CD-4622-8A80-D788271474DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttChartControl", "GanttChartControl\GanttChartControl.csproj", "{A99BE03F-F19B-493C-8D19-6F7C21738D9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00398FBD-92CD-4622-8A80-D788271474DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00398FBD-92CD-4622-8A80-D788271474DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00398FBD-92CD-4622-8A80-D788271474DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00398FBD-92CD-4622-8A80-D788271474DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99BE03F-F19B-493C-8D19-6F7C21738D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32620826-0155-40B0-8FDD-C84679B39991}
+	EndGlobalSection
+EndGlobal
