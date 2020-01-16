@@ -4,17 +4,17 @@
 library
 C#
 .cs
-F:\GithubProject\GanttChartWPF\GanttChartControl\obj\Debug\
+F:\Source Code\GanttChartWPF\GanttChartControl\obj\Debug\
 GanttChartControl
 none
 false
 DEBUG;TRACE
 
-2-1643830770
+4778444112
 
-6233782810
-14-97624525
-Themes\TimeHeaderStyle.xaml;Themes\ProjectItemTreeControlStyle.xaml;
+7-1315719133
+141246001164
+Themes\GanttChartGridStyle.xaml;Themes\RowColumnGridStyle.xaml;Themes\TimeHeaderStyle.xaml;Themes\ProjectItemTreeControlStyle.xaml;
 
 True
 

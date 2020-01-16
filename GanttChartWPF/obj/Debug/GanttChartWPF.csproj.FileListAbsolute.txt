@@ -33,3 +33,10 @@ F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.Gene
 F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.CopyComplete
 F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.exe
 F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\CommonLib.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartControl.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartControl.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\bin\Debug\CommonLib.pdb
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\App.baml
+F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.CopyComplete
