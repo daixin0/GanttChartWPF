@@ -93,5 +93,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GanttChartControl\GanttChartControl.csproj">
+      <Project>{a99be03f-f19b-493c-8d19-6f7c21738d9d}</Project>
+      <Name>GanttChartControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mrihf\CommonLib\CommonLib.csproj">
+      <Project>{a0b5a0b9-22ec-47cd-8f1e-8e8e403df76c}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

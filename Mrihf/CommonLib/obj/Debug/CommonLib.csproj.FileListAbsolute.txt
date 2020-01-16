@@ -10,3 +10,9 @@ F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.p
 F:\Source Code\GanttChartWPF\GanttChartWPF\Output\CommonLib.dll
 F:\Source Code\GanttChartWPF\GanttChartWPF\Output\CommonLib.pdb
 F:\Source Code\GanttChartWPF\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.csproj.CopyComplete
+F:\GithubProject\GanttChartWPF\Output\CommonLib.dll
+F:\GithubProject\GanttChartWPF\Output\CommonLib.pdb
+F:\GithubProject\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.csprojAssemblyReference.cache
+F:\GithubProject\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.csproj.CopyComplete
+F:\GithubProject\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.dll
+F:\GithubProject\GanttChartWPF\Mrihf\CommonLib\obj\Debug\CommonLib.pdb

@@ -41,7 +41,7 @@ namespace GanttChartControl.Models
 			set { Set(ref _endTime, value); }
 		}
 
-		private ObservableCollection<GanttProjectModel> _children;
+        private ObservableCollection<GanttProjectModel> _children = new ObservableCollection<GanttProjectModel>();
 
 		/// <summary>
 		/// Get or set Children value

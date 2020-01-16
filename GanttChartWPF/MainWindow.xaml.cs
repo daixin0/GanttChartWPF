@@ -1,5 +1,8 @@
-﻿using System;
+﻿using GanttChartControl.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +21,112 @@ namespace GanttChartWPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected PropertyChangedEventHandler PropertyChangedHandler
+        {
+            get
+            {
+                return PropertyChanged;
+            }
+        }
+        public void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+        private GanttProjectModel _ganttProjectModel = new GanttProjectModel();
+
+        /// <summary>
+        /// Get or set GanttProjectModel value
+        /// </summary>
+        public GanttProjectModel GanttProjectModel
+        {
+            get { return _ganttProjectModel; }
+            set { _ganttProjectModel = value; }
+        }
+        private ObservableCollection<TimeItemModel> _timeItemModels;
+
+        /// <summary>
+        /// Get or set TimeItemModels value
+        /// </summary>
+        public ObservableCollection<TimeItemModel> TimeItemModels
+        {
+            get { return _timeItemModels; }
+            set { _timeItemModels = value;
+                OnPropertyChanged("TimeItemModels");
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            GanttProjectModel.Children.Add(new GanttProjectModel()
+            {
+                ProjectName = "用药及输液情况",
+                Children = new ObservableCollection<GanttProjectModel>() {
+                    new GanttProjectModel() {  ProjectName="1"},
+                    new GanttProjectModel() {  ProjectName="2"},
+                    new GanttProjectModel() {  ProjectName="3"},
+                    new GanttProjectModel() {  ProjectName="4"},
+                    new GanttProjectModel() {  ProjectName="5"},
+                    new GanttProjectModel() {  ProjectName="6"},
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel()
+                }
+            });
+            GanttProjectModel.Children.Add(new GanttProjectModel()
+            {
+                ProjectName = "出量",
+                Children = new ObservableCollection<GanttProjectModel>() {
+                    new GanttProjectModel() {  ProjectName="输液" ,
+                        Children=new ObservableCollection<GanttProjectModel>(){
+                    new GanttProjectModel(){  ProjectName="10%葡萄糖"},
+                    new GanttProjectModel(){  ProjectName="琥珀系名叫"},
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel(),
+                    new GanttProjectModel()
+                        } },
+                    new GanttProjectModel() {  ProjectName="输血",Children=new ObservableCollection<GanttProjectModel>(){
+                    new GanttProjectModel(){  ProjectName="全血"}
+                    } },
+                    new GanttProjectModel() {  ProjectName="出量" }
+                }
+            });
+
+
+            TimeItemModels = new ObservableCollection<TimeItemModel>();
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 8, 0, 0)});
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 8, 15, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 8, 30, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 8, 45, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 9, 0, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 9, 15, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 9, 30, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 9, 45, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 10, 0, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 10, 15, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 10, 30, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 10, 45, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 11, 0, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 11, 15, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 11, 30, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 11, 45, 0) });
+            TimeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 12, 0, 0) });
         }
     }
 }

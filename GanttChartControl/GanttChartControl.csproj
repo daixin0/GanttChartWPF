@@ -46,10 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\GanttProjectModel.cs" />
+    <Compile Include="Models\TimeItemModel.cs" />
     <Compile Include="ProjectItemTreeControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeHeader.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\TimeHeaderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ProjectItemTreeControlStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
