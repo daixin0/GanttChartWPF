@@ -10,8 +10,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <local:RowsGridPresenter ItemsSource="{Binding GanttRowsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}"></local:RowsGridPresenter>
-                            <local:ColumnsGridPresenter ItemsSource="{Binding GanttColumnsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}"></local:ColumnsGridPresenter>
+                            <local:RowsGridPresenter GanttColumnsItem="{Binding GanttColumnsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}" ItemsSource="{Binding GanttRowsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}"></local:RowsGridPresenter>
                         </Grid>
                     </Border>
                 </ControlTemplate>

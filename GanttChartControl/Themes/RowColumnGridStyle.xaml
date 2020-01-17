@@ -26,6 +26,8 @@
     </Style>
     <Style TargetType="{x:Type local:ColumnsGridPresenter}">
         <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="1,1,1,0"></Setter>
+        <Setter Property="BorderBrush" Value="Black"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ColumnsGridPresenter}">
@@ -49,19 +51,20 @@
     </Style>
     <Style TargetType="{x:Type local:GridCell}">
         <Setter Property="Background" Value="Transparent"></Setter>
-        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="BorderThickness" Value="0,0,1,0"></Setter>
+        <Setter Property="BorderBrush" Value="Black"></Setter>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
-        <Setter Property="VerticalAlignment" Value="Center"></Setter>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-        <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+        <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:GridCell}">
                     <Border Background="{TemplateBinding Background}" Width="{TemplateBinding Width}"
                             BorderBrush="{TemplateBinding BorderBrush}" Height="{TemplateBinding Height}"
                             BorderThickness="{TemplateBinding BorderThickness}">
-                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <!--<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>-->
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

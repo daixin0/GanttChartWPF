@@ -5,7 +5,7 @@
     <Style TargetType="{x:Type local:ProjectTreeControl}">
         <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
-        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
         <Setter Property="Padding" Value="1"/>
         <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
@@ -15,7 +15,6 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ProjectTreeControl}">
                     <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
-
                         <ItemsPresenter/>
                     </Border>
                     <ControlTemplate.Triggers>
@@ -39,7 +38,7 @@
     
     <Style TargetType="{x:Type local:ProjectTreeItemControl}">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="BorderThickness" Value="1"></Setter>
+        <Setter Property="BorderThickness" Value="1,1,0,0"></Setter>
         <Setter Property="BorderBrush" Value="Black"></Setter>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="VerticalContentAlignment" Value="Stretch"/>
@@ -69,6 +68,7 @@
                         <Trigger Property="HasItems" Value="false">
                             <Setter TargetName="col1" Property="Width" Value="*"></Setter>
                             <Setter TargetName="col2" Property="Width" Value="0"></Setter>
+                            <Setter Property="Height" Value="18"></Setter>
                             <!--<Setter Property="Visibility" TargetName="Expander" Value="Hidden"/>-->
                         </Trigger>
                         <Trigger Property="IsSelected" Value="true">

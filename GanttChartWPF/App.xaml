@@ -8,6 +8,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/GanttChartControl;component/Themes/ProjectItemTreeControlStyle.xaml"></ResourceDictionary>
                 <ResourceDictionary Source="pack://application:,,,/GanttChartControl;component/Themes/TimeHeaderStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="pack://application:,,,/GanttChartControl;component/Themes/GanttChartGridStyle.xaml"></ResourceDictionary>
+                <ResourceDictionary Source="pack://application:,,,/GanttChartControl;component/Themes/RowColumnGridStyle.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
