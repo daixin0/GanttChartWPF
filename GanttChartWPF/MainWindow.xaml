@@ -8,7 +8,7 @@
         mc:Ignorable="d" Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <GanttChartControl:TimeHeaderControl VerticalAlignment="Top" Margin="0,0,15,0" HorizontalAlignment="Right" Width="800" Height="40" ItemsSource="{Binding TimeItemModels}">
+        <!--<GanttChartControl:TimeHeaderControl VerticalAlignment="Top" Margin="0,0,15,0" HorizontalAlignment="Right" Width="800" Height="40" ItemsSource="{Binding TimeItemModels}">
             <GanttChartControl:TimeHeaderControl.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -25,8 +25,8 @@
                     </Grid>
                 </HierarchicalDataTemplate>
             </GanttChartControl:ProjectTreeControl.ItemTemplate>
-        </GanttChartControl:ProjectTreeControl>
-        <GanttChartControl:GanttChartGridControl GanttRowsItem="{Binding RowItemList}" GanttColumnsItem="{Binding ColumnItemList}" Width="800" Height="379"  VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+        </GanttChartControl:ProjectTreeControl>-->
+        <GanttChartControl:GanttChartGridControl GanttItemsSourceHeader="{Binding TimeItemModels}" GanttItemsSourceTree="{Binding GanttProjectModel}" />
 
     </Grid>
 </Window>
