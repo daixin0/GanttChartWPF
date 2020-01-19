@@ -13,6 +13,7 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="40"></RowDefinition>
                                 <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="200"></ColumnDefinition>
@@ -37,6 +38,8 @@
                                 </local:ProjectTreeControl.ItemTemplate>
                             </local:ProjectTreeControl>
                             <local:RowsGridPresenter Grid.Column="1" Grid.Row="1" GanttColumnsItem="{Binding GanttColumnsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}" ItemsSource="{Binding GanttRowsItem,RelativeSource={RelativeSource AncestorType={x:Type local:GanttChartGridControl}}}"></local:RowsGridPresenter>
+                            <local:ElectrocardiogramControl Grid.Row="2"></local:ElectrocardiogramControl>
+                            
                         </Grid>
                     </Border>
                 </ControlTemplate>

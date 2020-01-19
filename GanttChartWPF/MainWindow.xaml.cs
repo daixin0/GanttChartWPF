@@ -134,6 +134,7 @@ namespace GanttChartWPF
             timeItemModels.Add(new TimeItemModel() { TimeName = new DateTime(2020, 1, 16, 11, 45, 0) });
             TimeItemModels = new ObservableCollection<TimeItemModel>(timeItemModels);
 
+
             //GetTreeChildren(RowItemList, GanttProjectModel);
 
             //foreach (var item in TimeItemModels)

@@ -19,3 +19,24 @@ F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.Genera
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.CopyComplete
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.exe
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.pdb
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.exe.config
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.exe
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartWPF.pdb
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\CommonLib.dll
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartControl.dll
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\GanttChartControl.pdb
+F:\GithubProject\GanttChartWPF\GanttChartWPF\bin\Debug\CommonLib.pdb
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csprojAssemblyReference.cache
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\MainWindow.g.cs
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\App.g.cs
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF_MarkupCompile.cache
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF_MarkupCompile.lref
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\App.baml
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\MainWindow.baml
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.g.resources
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.Properties.Resources.resources
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.GenerateResource.cache
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.CopyComplete
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.exe
+F:\GithubProject\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.pdb
