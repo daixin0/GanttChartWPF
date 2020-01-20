@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="ElectrocardiogramControl.cs" />
     <Compile Include="GanttChartGridControl.cs" />
+    <Compile Include="LineServiceChartControl.cs" />
     <Compile Include="Models\GanttProjectModel.cs" />
     <Compile Include="Models\LineLegendItemModel.cs" />
     <Compile Include="Models\LineService.cs" />
@@ -56,6 +57,10 @@
     <Compile Include="TimeHeaderControl.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Themes\LineServiceChartControlStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ElectrocardiogramControlStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

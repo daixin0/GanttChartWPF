@@ -16,6 +16,17 @@ namespace GanttChartControl
 {
     public class GridCell : ContentControl
     {
+        public double YPoint
+        {
+            get { return (double)GetValue(YPointProperty); }
+            set { SetValue(YPointProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for YPoint.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty YPointProperty =
+            DependencyProperty.Register("YPoint", typeof(double), typeof(GridCell));
+
+
 
         public DateTime ProjectStartTime
         {
@@ -154,6 +165,19 @@ namespace GanttChartControl
             base.OnPropertyChanged(e);
             if(e.Property.Name== "GanttColumnsItem")
             {
+                if (ItemsSource == null)
+                    return;
+                foreach (var item in this.ItemsSource)
+                {
+                    ColumnsGridPresenter col = this.ItemContainerGenerator.ContainerFromItem(item) as ColumnsGridPresenter;
+                    col.GanttProjectRow = item as GanttProjectModel;
+                    col.ItemsSource = GanttColumnsItem;
+                }
+            }
+            if(e.Property.Name== "ItemsSource")
+            {
+                if (GanttColumnsItem == null)
+                    return;
                 foreach (var item in this.ItemsSource)
                 {
                     ColumnsGridPresenter col = this.ItemContainerGenerator.ContainerFromItem(item) as ColumnsGridPresenter;

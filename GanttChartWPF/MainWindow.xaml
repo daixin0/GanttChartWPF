@@ -5,9 +5,13 @@
         xmlns:local="clr-namespace:GanttChartWPF"
         xmlns:GanttChartControl="clr-namespace:GanttChartControl;assembly=GanttChartControl" x:Class="GanttChartWPF.MainWindow"
         mc:Ignorable="d" Loaded="Window_Loaded"
-        Title="MainWindow" Height="1000" Width="900">
+        Title="MainWindow" Height="900" Width="900">
     <Grid>
-        <GanttChartControl:GanttChartGridControl GanttItemsSourceHeader="{Binding TimeItemModels}" GanttItemsSourceTree="{Binding GanttProjectModel}" />
-        
+        <!--<Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>-->
+        <!--<GanttChartControl:GanttChartGridControl GanttItemsSourceHeader="{Binding TimeItemModels}" GanttItemsSourceTree="{Binding GanttProjectModel}" />-->
+        <GanttChartControl:LineServiceChartControl LineRowsItem="{Binding LineRowsItem}" LineServiceData="{Binding LineServiceList}"  LineXTimeSource="{Binding TimeItemModels}"></GanttChartControl:LineServiceChartControl>
     </Grid>
 </Window>
