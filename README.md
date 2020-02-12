@@ -6,12 +6,12 @@ Line Chart for WPF
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/2.png)
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/3.png)
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/4.png)
-![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/5.png)
+![这是打印出来的样子](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/5.png)
 
 
 术中检测图（多图和一）
 
-图表和网格通过Path绘制，所以效率还可以。这是当前做法
+图表和网格通过Path绘制，所以效率还可以。因为是通过列表控件分页，所以可以支持虚拟化模板。
 
 
 当前控件分多个部分组成，假如你只需要其中一部分也可以很好的分离出来
