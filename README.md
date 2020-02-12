@@ -2,7 +2,11 @@
 Gantt Chart for WPF  
 Line Chart for WPF
 
-![图片1](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png)
+https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png
+https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/2.png
+https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/3.png
+https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/4.png
+https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/5.png
 
 
 术中检测图（多图和一）
@@ -21,7 +25,7 @@ Line Chart for WPF
 
 4.支持图表按照数据分页
 
-5.打印
+5.支持打印
 
 6.全数据绑定
 
