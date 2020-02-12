@@ -2,16 +2,41 @@
 Gantt Chart for WPF  
 Line Chart for WPF
 
-![图片1](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png)
+![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/1.png)
+![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/2.png)
+![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/3.png)
+![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/4.png)
+![这是打印出来的样子](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/5.png)
 
 
 术中检测图（多图和一）
 
-图表和网格通过Path绘制，所以效率还可以。这是当前做法
-另外一种是通过控件绘制的网格，易于扩展，但是网格生成速度会较慢，如果你只需要甘特图，这是一种不错的方式
+图表和网格通过Path绘制，所以效率还可以。因为是通过列表控件分页，所以可以支持虚拟化模板。
+
+
+当前控件分多个部分组成，假如你只需要其中一部分也可以很好的分离出来
+
+如果你只需要某个部分，可以找到对应的控件和样式直接引用，绑定并传递对应的属性即可
+
+
+1.时间头
+
+2.甘特图左侧的列表
+
+3.甘特图
+
+4.折线图
+
+5.折线图下方的项目列表
+
+6.分页控件
+
+7.网格和内部绘制的图
 
 
 
+
+控件支持功能：
 
 1.甘特图一个
 
@@ -21,7 +46,7 @@ Line Chart for WPF
 
 4.支持图表按照数据分页
 
-5.打印
+5.支持打印
 
 6.全数据绑定
 
