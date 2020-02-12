@@ -2,6 +2,9 @@
 Gantt Chart for WPF  
 Line Chart for WPF
 
+![图片1](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png)
+
+
 术中检测图（多图和一）
 
 图表和网格通过Path绘制，所以效率还可以。这是当前做法
