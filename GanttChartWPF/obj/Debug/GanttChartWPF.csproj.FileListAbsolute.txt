@@ -19,3 +19,6 @@ F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.Genera
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.csproj.CopyComplete
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.exe
 F:\Source Code\GanttChartWPF\GanttChartWPF\obj\Debug\GanttChartWPF.pdb
+F:\Source Code\GanttChartWPF\Output\GanttChartWPF.exe.config
+F:\Source Code\GanttChartWPF\Output\GanttChartWPF.exe
+F:\Source Code\GanttChartWPF\Output\GanttChartWPF.pdb

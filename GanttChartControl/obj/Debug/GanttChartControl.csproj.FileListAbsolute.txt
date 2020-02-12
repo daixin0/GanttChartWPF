@@ -23,3 +23,5 @@ F:\Source Code\GanttChartWPF\GanttChartControl\obj\Debug\Themes\OperationMonitor
 F:\Source Code\GanttChartWPF\GanttChartControl\obj\Debug\Themes\ThumbStyle.baml
 F:\Source Code\GanttChartWPF\GanttChartControl\obj\Debug\PrintListWindow.g.cs
 F:\Source Code\GanttChartWPF\GanttChartControl\obj\Debug\PrintListWindow.baml
+F:\Source Code\GanttChartWPF\Output\GanttChartControl.dll
+F:\Source Code\GanttChartWPF\Output\GanttChartControl.pdb
