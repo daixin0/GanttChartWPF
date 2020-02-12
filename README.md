@@ -2,11 +2,11 @@
 Gantt Chart for WPF  
 Line Chart for WPF
 
-https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png
-https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/2.png
-https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/3.png
-https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/4.png
-https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/5.png
+![](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/1.png)
+![](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/2.png)
+![](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/3.png)
+![](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/4.png)
+![](https://github.com/daixin10310/GanttChartWPF/wiki/GanttChartWPF/5.png)
 
 
 术中检测图（多图和一）
