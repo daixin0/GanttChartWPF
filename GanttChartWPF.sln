@@ -17,6 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mrihf", "Mrihf", "{ABB6962B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLib", "Mrihf\CommonLib\CommonLib.csproj", "{A0B5A0B9-22EC-47CD-8F1E-8E8E403DF76C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{4E1E285E-233C-4282-9568-D88DEEB903C9}"
+	ProjectSection(SolutionItems) = preProject
+		Images\1.png = Images\1.png
+		Images\2.png = Images\2.png
+		Images\3.png = Images\3.png
+		Images\4.png = Images\4.png
+		Images\5.png = Images\5.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
