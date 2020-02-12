@@ -5,13 +5,18 @@
         xmlns:local="clr-namespace:GanttChartWPF"
         xmlns:GanttChartControl="clr-namespace:GanttChartControl;assembly=GanttChartControl" x:Class="GanttChartWPF.MainWindow"
         mc:Ignorable="d" Loaded="Window_Loaded"
-        Title="MainWindow" Height="900" Width="900">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
-        <!--<Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>-->
-        <!--<GanttChartControl:GanttChartGridControl GanttItemsSourceHeader="{Binding TimeItemModels}" GanttItemsSourceTree="{Binding GanttProjectModel}" />-->
-        <GanttChartControl:LineServiceChartControl LineRowsItem="{Binding LineRowsItem}" LineServiceData="{Binding LineServiceList}"  LineXTimeSource="{Binding TimeItemModels}"></GanttChartControl:LineServiceChartControl>
+        <ScrollViewer x:Name="sv">
+            <GanttChartControl:OperationMonitorChartPageControl x:Name="chart" HeaderTimeTitle="时间" LineChartTitle="术中监测"
+             GanttItemsSourceHeader="{Binding TimeItemModels}" GanttItemsSourceTree="{Binding GanttProjectModel}"
+             ProjectGroupInfo="{Binding ProjectInfoList}" Y1AxisScale="{Binding Y1AxisScale}" 
+             Y1AxisScaleTitle="{Binding Y1AxisScaleTitle}" Y2AxisScale="{Binding Y2AxisScale}" 
+             Y2AxisScaleTitle="{Binding Y2AxisScaleTitle}"  LineRowsItem="{Binding LineRowsItem}"
+             LineServiceData="{Binding LineServiceList}" ></GanttChartControl:OperationMonitorChartPageControl>
+        </ScrollViewer>
+        
+        <Button Content="Button" Click="Button_Click" HorizontalAlignment="Left" Margin="1108,292,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
+    
 </Window>

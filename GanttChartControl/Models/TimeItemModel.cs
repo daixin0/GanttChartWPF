@@ -21,7 +21,6 @@ namespace GanttChartControl.Models
             get { return _timeName; }
             set {
 
-                DateTimeList.Add(value);
                 DateTimeList.Add(value.AddMinutes(5));
                 DateTimeList.Add(value.AddMinutes(10));
                 Set(ref _timeName, value); }

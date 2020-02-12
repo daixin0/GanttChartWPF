@@ -4,13 +4,12 @@
     <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
     <Style TargetType="{x:Type local:ProjectTreeControl}">
         <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
-        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="BorderThickness" Value="0,0,1,1"/>
         <Setter Property="Padding" Value="1"/>
         <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
-        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+        <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ProjectTreeControl}">
@@ -53,7 +52,7 @@
                 <ControlTemplate TargetType="{x:Type local:ProjectTreeItemControl}">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition x:Name="col1" MinWidth="25" Width="25"/>
+                            <ColumnDefinition x:Name="col1" MinWidth="23" Width="23"/>
                             <ColumnDefinition x:Name="col2"/>
                         </Grid.ColumnDefinitions>
                         <Border x:Name="Bd" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">

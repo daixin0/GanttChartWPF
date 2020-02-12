@@ -3,11 +3,10 @@
                     xmlns:local="clr-namespace:GanttChartControl">
     <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
     <Style TargetType="{x:Type local:ProjectItemControl}">
-        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="Background" Value="Black"/>
         <Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
-        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="1"/>
-        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         <Setter Property="VerticalContentAlignment" Value="Stretch"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
@@ -25,6 +24,28 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel IsItemsHost="True"></StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
-
+    <Style x:Key="LengendTopItemStyle" TargetType="{x:Type local:LegendContentControl}">
+        <Setter Property="Height" Value="18"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:LegendContentControl}">
+                    <Border Background="{TemplateBinding Background}" Width="{TemplateBinding Width}"
+                            BorderBrush="{TemplateBinding BorderBrush}" Height="{TemplateBinding Height}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

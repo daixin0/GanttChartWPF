@@ -3,8 +3,10 @@
                     xmlns:local="clr-namespace:GanttChartControl">
     <Style TargetType="{x:Type local:TimeHeaderControl}">
         <Setter Property="Background" Value="Transparent"></Setter>
-        <Setter Property="BorderThickness" Value="0,1,1,0"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
         <Setter Property="BorderBrush" Value="Black"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Height" Value="17" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:TimeHeaderControl}">
@@ -12,7 +14,7 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                            <ItemsPresenter  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
                         </Grid>
                     </Border>
                 </ControlTemplate>
@@ -31,17 +33,15 @@
         <Setter Property="BorderThickness" Value="0"></Setter>
         <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
         <Setter Property="VerticalAlignment" Value="Top"></Setter>
-        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="Width" Value="54"></Setter>
-        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
-        <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:TimeContentControl}">
                     <Border Background="{TemplateBinding Background}" Width="{TemplateBinding Width}"
                             BorderBrush="{TemplateBinding BorderBrush}" Height="{TemplateBinding Height}"
                             BorderThickness="{TemplateBinding BorderThickness}">
-                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <ContentPresenter Margin="-15,0,0,0" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>

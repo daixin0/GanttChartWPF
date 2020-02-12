@@ -22,18 +22,6 @@ namespace GanttChartControl
             bool _isITV = item is TimeContentControl;
             return _isITV;
         }
-        protected override void OnItemsSourceChanged(IEnumerable oldValue, IEnumerable newValue)
-        {
-            base.OnItemsSourceChanged(oldValue, newValue);
-            foreach (var item in Items)
-            {
-                if(item is TimeItemModel)
-                {
-                    TimeItemModel itemModel = item as TimeItemModel;
-                }
-            }
-            
-        }
 
     }
     public class TimeContentControl : ContentControl

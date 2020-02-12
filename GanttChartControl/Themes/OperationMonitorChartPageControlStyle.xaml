@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GanttChartControl"
+                    xmlns:converter="clr-namespace:GanttChartControl.Converters">
+    <converter:BoolAsVisiableConverter x:Key="conBool"></converter:BoolAsVisiableConverter>
+    <Style TargetType="{x:Type local:OperationMonitorChartPageControl}">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="VerticalAlignment" Value="Top"></Setter>
+        <Setter Property="BorderThickness" Value="0,1,1,0" />
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:OperationMonitorChartPageControl}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ItemsPresenter Margin="0,0,50,0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel IsItemsHost="True"></StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type local:OperationMonitorChartControl}">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0,0,1,0"></Setter>
+        <Setter Property="BorderBrush" Value="#FFCECECE"></Setter>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:OperationMonitorChartControl}">
+                    <StackPanel>
+                        <local:GanttChartGridControl HeaderTitle="{Binding HeaderTimeTitle,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" GanttItemsSourceHeader="{Binding GanttItemsSourceHeader,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartControl}}}" GanttItemsSourceTree="{Binding GanttItemsSourceTree,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" />
+                        <local:LineServiceChartControl x:Name="chart"
+                            Title="{Binding LineChartTitle,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" 
+                            Y1AxisScale="{Binding Y1AxisScale,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" 
+                            Y1AxisScaleTitle="{Binding Y1AxisScaleTitle,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" 
+                            Y2AxisScale="{Binding Y2AxisScale,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}" 
+                            Y2AxisScaleTitle="{Binding Y2AxisScaleTitle,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}"  
+                            LineRowsItem="{Binding LineRowsItem,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartPageControl}}}"
+                            LineServiceData="{Binding LineServiceData,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartControl}}}"  
+                            ProjectGroupInfo="{Binding ProjectGroupInfo,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartControl}}}"
+                            LineXTimeSource="{Binding GanttItemsSourceHeader,RelativeSource={RelativeSource AncestorType={x:Type local:OperationMonitorChartControl}}}">
+                        </local:LineServiceChartControl>
+                        
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,8 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:GanttChartControl">
+                    xmlns:local="clr-namespace:GanttChartControl"
+                    xmlns:converter="clr-namespace:GanttChartControl.Converters">
+    <converter:NullAsVisiableConverter x:Key="conNull"></converter:NullAsVisiableConverter>
     <Style TargetType="{x:Type local:ElectrocardiogramControl}">
         <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="Black" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ElectrocardiogramControl}">
@@ -10,10 +14,32 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <Grid>
-                            <local:ProjectItemControl ItemsSource="{Binding LegendItems,RelativeSource={RelativeSource AncestorType={x:Type local:ElectrocardiogramControl}}}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="23" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Border BorderThickness="0,0,1,0" BorderBrush="Black">
+                                <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Title,RelativeSource={RelativeSource AncestorType={x:Type local:ElectrocardiogramControl}}}"></TextBlock>
+                            </Border>
+                            <local:ProjectItemControl Grid.Column="1" Margin="30,0,0,0" VerticalAlignment="Center" ItemsSource="{Binding LegendItems,RelativeSource={RelativeSource AncestorType={x:Type local:ElectrocardiogramControl}}}">
                                 <local:ProjectItemControl.ItemTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Title}"></TextBlock>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Foreground="{Binding Color}" Text="{Binding TitleIcon}"></TextBlock>
+                                            <Path Width="12" Height="6" Stretch="Fill" Stroke="{Binding Color}" Data="{Binding TitleIconGeometry}" Visibility="{Binding TitleIconGeometry,Converter={StaticResource conNull}}"></Path>
+                                            <TextBlock Foreground="{Binding Color}" Text="{Binding Title}"></TextBlock>
+                                            
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </local:ProjectItemControl.ItemTemplate>
+                            </local:ProjectItemControl>
+                            <local:ProjectItemControl Grid.Column="1" ItemContainerStyle="{DynamicResource LengendTopItemStyle}" VerticalAlignment="Top" HorizontalAlignment="Right" ItemsSource="{Binding LineLegendTopItem,RelativeSource={RelativeSource AncestorType={x:Type local:ElectrocardiogramControl}}}">
+                                <local:ProjectItemControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Foreground="{Binding Color}" Text="{Binding TitleIcon}"></TextBlock>
+                                            <TextBlock Foreground="{Binding Color}" Text="{Binding Title}"></TextBlock>
+                                        </StackPanel>
                                     </DataTemplate>
                                 </local:ProjectItemControl.ItemTemplate>
                             </local:ProjectItemControl>
@@ -22,6 +48,65 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+    <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+    <Style TargetType="{x:Type local:YAxisControl}">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Padding" Value="1"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:YAxisControl}">
+                    <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="{Binding Title,RelativeSource={RelativeSource AncestorType=local:YAxisControl}}"></TextBlock>
+                            <ItemsPresenter Grid.Row="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+                        </Grid>
+                        
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel IsItemsHost="True"></StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type local:YAxisTitleControl}">
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Setter Property="BorderBrush" Value="Black"></Setter>
+        <Setter Property="Height" Value="36"></Setter>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"></Setter>
+        <!--<Setter Property="Margin" Value="{Binding FirstMargin,RelativeSource={RelativeSource AncestorType={x:Type local:YAxisTitleControl}}}"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:YAxisTitleControl}">
+                    <Border Background="{TemplateBinding Background}" Width="{TemplateBinding Width}"
+                            BorderBrush="{TemplateBinding BorderBrush}" Height="{TemplateBinding Height}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <Grid>
+                            <ContentPresenter Margin="{Binding FirstMargin,RelativeSource={RelativeSource AncestorType={x:Type local:YAxisTitleControl}}}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Grid>
 
+                        
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>
