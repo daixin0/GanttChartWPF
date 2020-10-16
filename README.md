@@ -6,7 +6,7 @@ Line Chart for WPF
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/2.png)
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/3.png)
 ![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/4.png)
-![这是打印出来的样子](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/5.png)
+![](https://raw.githubusercontent.com/wiki/daixin10310/GanttChartWPF/5.png)
 
 
 术中检测图（多图和一）
